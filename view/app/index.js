@@ -1,26 +1,24 @@
+// app.js
 define([
-    '@/operationData/index',
+    "constant",
+    "component/progressSwipper/index",
+    "orderServer",
     'text!@/app/index.html',
-    'less!@/app/index',
-    "less!common/less/popover",
-    "less!common/less/modeScreen",
-], function(operationData, tpl) {
-    return {
+    'less!@/app/index'
+], function(constant, progressSwipper, orderServer, tpl) {
+	return {
         template: tpl,
         components: {
-            operationData,
+            progressSwipper,
         },
-        data() {
+         data() {
             return {
-                activeName: 'first'
+                title: 'hello world'
             }
         },
-        mounted: function () {
-        },
-        created: function() {
-            
-        },
-        methods: {
-        },
+        mounted: function () {},
+        created: function() {},
+        methods: {},
     }
-})
+});
+
