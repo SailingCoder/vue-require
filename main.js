@@ -16,14 +16,14 @@ require.config({
     },
     map: {
         '*': {
-            'text': 'html/js/require/require-text', // path to text
-            'css': 'html/js/require/require-css', // path to css
-            'less': 'html/js/require/require-less' // path to less
+            'text': 'public/require/require-text', // path to text
+            'css': 'public/require/require-css', // path to css
+            'less': 'public/require/require-less' // path to less
         }
     },
     shim: {
         'ELEMENT':{
-			deps: ['vue', 'css!/html/element-ui/lib/theme-chalk/index']
+			deps: ['vue', 'css!public/element-ui/lib/theme-chalk/index']
 		}
     },
 });

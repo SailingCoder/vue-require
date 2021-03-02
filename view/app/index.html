@@ -1,4 +1,12 @@
 
 <div class="page-container">
-    
+    <div>{{title}}</div>
+    <el-tabs v-model="activeName" @tab-click="handleClick">
+        <el-tab-pane label="用户管理" name="first">
+            <page-member></page-member>
+        </el-tab-pane>
+        <el-tab-pane label="订单管理" name="second">
+            <page-order></page-order>
+        </el-tab-pane>
+    </el-tabs>
 </div>
